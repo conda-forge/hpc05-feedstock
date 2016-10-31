@@ -1,5 +1,5 @@
 {% set name = "hpc05" %}
-{% set version = "v1.11" %}
+{% set version = "1.11" %}
 {% set sha256 = "53e1adee5df1de11356824eea3d03b09619adfe64bd5a52a09670221df652b7e" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ version }}.zip
-  url: https://github.com/basnijholt/hpc05/archive/{{ version }}.zip
+  fn: v{{ version }}.zip
+  url: https://github.com/basnijholt/hpc05/archive/v{{ version }}.zip
   sha256: {{ sha256 }}
 
 build:
