@@ -1,6 +1,6 @@
 {% set name = "hpc05" %}
-{% set version = "v1.13" %}
-{% set sha256 = "dba73cf5a7e23697fb39fbfbf4c6811825a981139899e351ce1dee08c7550232" %}
+{% set version = "v1.14" %}
+{% set sha256 = "9d8fe5b1e11d9570dc1e6353a391923ec05078ac405662b761996f513e0c1322" %}
 
 package:
   name: {{ name|lower }}
@@ -19,13 +19,7 @@ build:
 requirements:
   build:
     - python
-    - paramiko
-    - sshtunnel
-    - ipyparallel
-    - pyzmq
-    - tornado
-    - pexpect
-    - ipython
+    - setuptools
   run:
     - python
     - paramiko
@@ -35,6 +29,7 @@ requirements:
     - tornado
     - pexpect
     - ipython
+    - psutil
 
 test:
   imports:
