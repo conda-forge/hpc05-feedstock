@@ -1,6 +1,6 @@
 {% set name = "hpc05" %}
 {% set version = "v1.14" %}
-{% set sha256 = "f98a8f8305fb1b853fb1f314a356a887ff579495abfb98470fcfcd73eef6adce" %}
+{% set sha256 = "84e01c11aa45cc890e8f3ac34522ab0a43512fd4dc18d4361fe5c837e9ffb504" %}
 
 package:
   name: {{ name|lower }}
@@ -29,6 +29,7 @@ requirements:
     - tornado
     - pexpect
     - ipython
+    - psutil
 
 test:
   imports:
