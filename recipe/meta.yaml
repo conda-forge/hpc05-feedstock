@@ -1,6 +1,6 @@
 {% set name = "hpc05" %}
-{% set version = "v1.18" %}
-{% set sha256 = "66130049c930f3715cb7ffa91d475b91591cba7a8dbbc490dd312d8a5eaa0efb" %}
+{% set version = "v1.19" %}
+{% set sha256 = "41af68c30028fe620c14720a9628b12c78d2d92504b7536b2889d34abeda88cf" %}
 
 package:
   name: {{ name|lower }}
@@ -13,6 +13,7 @@ source:
 
 build:
   number: 0
+  skip: true  # [not py36 or win]
   script: 
    - python setup.py install --single-version-externally-managed --record record.txt
 
