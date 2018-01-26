@@ -31,6 +31,7 @@ requirements:
     - pexpect
     - ipython
     - psutil
+    - dill
 
 test:
   imports:
