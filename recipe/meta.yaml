@@ -15,7 +15,7 @@ build:
   number: 0
   skip: true  # [not py36 or win]
   script: 
-   - script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+   - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
