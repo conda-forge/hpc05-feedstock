@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [not py36 or win]
+  skip: true  # [py<36 or win]
   script: 
    - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
