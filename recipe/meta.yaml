@@ -1,6 +1,6 @@
 {% set name = "hpc05" %}
-{% set version = "v1.25" %}
-{% set sha256 = "881409dcc3383c7a5d384c57e675ff2822864c7d84a2b0d0e391c13afd552390" %}
+{% set version = "v1.26" %}
+{% set sha256 = "9272171241e91b9db888008f4a35b55aebcce7587a6189a9d96b8006e6f7336f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [not py36 or win]
+  skip: true  # [py<36 or win]
   script: 
    - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
