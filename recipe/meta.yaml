@@ -1,6 +1,6 @@
 {% set name = "hpc05" %}
 {% set version = "v1.28" %}
-{% set sha256 = "e01c0ebe36ed35c93fc42fa424deaedae996d4ceb77a2b40908308e77501562b" %}
+{% set sha256 = "2438c05eed80e6c77c4e3080d75931d759a5395c872e9b79ed9b87d04c808a0b" %}
 
 package:
   name: {{ name|lower }}
@@ -25,12 +25,9 @@ requirements:
   run:
     - python
     - paramiko
-    - sshtunnel
     - ipyparallel
-    - pyzmq
     - tornado
     - pexpect
-    - ipython
     - psutil
     - dill
 
@@ -38,6 +35,7 @@ test:
   imports:
     - hpc05
     - hpc05_culler
+    - hpc05_monitor
 
 about:
   home: http://github.com/basnijholt/hpc05
