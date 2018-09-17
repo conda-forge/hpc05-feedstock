@@ -1,6 +1,6 @@
 {% set name = "hpc05" %}
-{% set version = "v1.26" %}
-{% set sha256 = "9272171241e91b9db888008f4a35b55aebcce7587a6189a9d96b8006e6f7336f" %}
+{% set version = "v1.27" %}
+{% set sha256 = "e01c0ebe36ed35c93fc42fa424deaedae996d4ceb77a2b40908308e77501562b" %}
 
 package:
   name: {{ name|lower }}
@@ -43,7 +43,7 @@ about:
   home: http://github.com/basnijholt/hpc05
   license: MIT
   license_file: LICENSE
-  summary: "ipyparallel Client package for PBS cluster with headnode (as on the TU Delft)."
+  summary: "ipyparallel Client and convenience package for a PBS or SLURM cluster with a headnode."
   dev_url: https://github.com/basnijholt/hpc05
 
 extra:
