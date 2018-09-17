@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: ipyparallel Client package for PBS cluster with headnode (as on the TU Delft).
+Summary: ipyparallel Client and convenience package for a PBS or SLURM cluster with a headnode.
 
 
 
