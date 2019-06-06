@@ -1,6 +1,6 @@
 {% set name = "hpc05" %}
-{% set version = "v1.30" %}
-{% set sha256 = "3e0902c3b5e5fd5b68aa7622c9dd0fb3ad9981bc4c090ed86d3d7522585f057c" %}
+{% set version = "2.0.1" %}
+{% set sha256 = "c92710abb9184369bc7bec5864dd6a084291caf0fa8233904308f28eedd5d2b0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,13 @@ package:
 
 source:
   fn: {{ version }}.zip
-  url: https://github.com/basnijholt/hpc05/archive/{{ version }}.zip
+  url: https://github.com/basnijholt/hpc05/archive/v{{ version }}.zip
   sha256: {{ sha256 }}
 
 build:
   number: 0
   skip: true  # [py<36 or win]
-  script: 
+  script:
    - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
