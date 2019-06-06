@@ -1,6 +1,6 @@
 {% set name = "hpc05" %}
 {% set version = "2.0.1" %}
-{% set sha256 = "69685e33c7454d54d9116435d04785c1b02b98ca46a05c2ba6835a42f948a791" %}
+{% set sha256 = "c92710abb9184369bc7bec5864dd6a084291caf0fa8233904308f28eedd5d2b0" %}
 
 package:
   name: {{ name|lower }}
