@@ -38,7 +38,7 @@ test:
     - hpc05_monitor
 
 about:
-  home: http://github.com/basnijholt/hpc05
+  home: https://hpc05.readthedocs.io/
   license: MIT
   license_file: LICENSE
   summary: "ipyparallel Client and convenience package for a PBS or SLURM cluster with a headnode."
