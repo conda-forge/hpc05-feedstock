@@ -1,6 +1,6 @@
 {% set name = "hpc05" %}
-{% set version = "2.0.5" %}
-{% set sha256 = "5a84b6c818f2dfee38df99833196ac33f40ab98d16983a30ea4f87d22deb36e1" %}
+{% set version = "2.0.6" %}
+{% set sha256 = "caef40ed18042fafa5e37b61727a65d91d111ef077390a45c2d9288e3e47bca9" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ build:
   number: 0
   skip: true  # [py<36 or win]
   script:
-   - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+    - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -41,7 +41,7 @@ about:
   home: https://hpc05.readthedocs.io/
   license: MIT
   license_file: LICENSE
-  summary: "ipyparallel Client and convenience package for a PBS or SLURM cluster with a headnode."
+  summary: ipyparallel Client and convenience package for a PBS or SLURM cluster with a headnode.
   dev_url: https://github.com/basnijholt/hpc05
 
 extra:
